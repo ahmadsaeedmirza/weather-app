@@ -3,7 +3,7 @@
     width: 50%;
     border: transparent;
     border-radius: 1.5rem;
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 5%;
     padding-bottom: 2rem;
     background-color: #405D72;
     display: flex;
@@ -40,6 +40,8 @@
 @media (max-width: 750px) { 
     .three-hours {
         margin-top: 2rem;
-        width: 90%;
+        width: 80%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 }

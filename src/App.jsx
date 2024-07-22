@@ -44,7 +44,7 @@ function App () {
     <div className="main">
 
       <div className="left">
-        <img className="search-img" onClick={handleClick} src="../imgs/search.svg" alt="" />
+        <img className="search-img" onClick={handleClick} src="../src/imgs/search.svg" alt="" />
         <input 
           type="text" 
           placeholder="Search for cities"

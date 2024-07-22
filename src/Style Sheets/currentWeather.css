@@ -15,10 +15,12 @@ h2 {
 }
 
 .city-name {
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 .forecast {
@@ -47,10 +49,12 @@ h2 {
     width: 100%;
     border: transparent;
     border-radius: 1.5rem;
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 5%;
     padding-bottom: 2rem;
     background-color: #405D72;
     margin-top: 4rem;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 .feels-like, .temp-max, .temp-min, .sunrise, .sunset, .wind-speed, .humidity {
@@ -76,16 +80,6 @@ h2 {
     height: auto;
     margin-right: 10px;
 }
-
-/* .current-weather-details {
-    width: 100%;
-    border: transparent;
-    border-radius: 1.5rem;
-    padding: 0.5rem 1.5rem;
-    padding-bottom: 2rem;
-    background-color: #405D72;
-    margin-top: 4rem;
-}  */
 
 @media (max-width: 750px) { 
     h1 {
@@ -113,16 +107,18 @@ h2 {
     .local-time-mobile {
         display: block;
         font-size: 0.8rem;
+        margin-left: 5%;
     }
 
     .detail, .feels-like-temp, .wind-speed-ms, .humidity-percent, .sunrise-time, .sunset-time {
-        width: 40%;
+        width: 50%;
     }
 
     .current-weather-details {
         flex-direction: column;
-        width: 90%;
+        width: 80%;
         margin-top: 2rem;
+        padding-bottom: 1rem;
     }
 
     .first-col, .second-col, .third-col {
@@ -131,8 +127,11 @@ h2 {
         justify-content: space-between;
     }
 
-    .first-col h3, h2, .second-col h3, .third-col h3 {
+    .first-col h3, .second-col h3, .third-col h3 {
         font-size: 1rem;
     }
 
+    .first-col h2 {
+        font-size: 1.5rem; 
+    }
 }
