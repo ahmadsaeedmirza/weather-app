@@ -96,15 +96,15 @@ function CurrentWeather ({ city , unit }) {
             <div className="current-weather-details">
                 <div className="first-col">
                     <div className="detail"><h2>{weather.description}</h2></div>
-                    <div className="feels-like-temp"> <span className="feels-like"> <img src="../src/imgs/feels-like-white.svg" alt="" /> <h3>Feels Like </h3> </span> <p> {weather.feelsLike} {degree} </p></div>
+                    <div className="feels-like-temp"> <span className="feels-like"> <i className="fa-solid fa-temperature-three-quarters weather-img" style={{color: '#ffffff'}}></i> <h3>Feels Like </h3> </span> <p> {weather.feelsLike} {degree} </p></div>
                 </div>
                 <div className="second-col">
-                    <div className="wind-speed-ms"> <span className="wind-speed"> <img src="../src/imgs/wind-solid.svg" alt="" /> <h3>Wind Speed</h3> </span> <p> {weather.windSpeed}</p> </div>
-                    <div className="humidity-percent"> <span className="humidity"> <img src="../src/imgs/water-solid.svg" alt="" /> <h3>Humidity</h3> </span> <p>{weather.humidity}</p> </div>
+                    <div className="wind-speed-ms"> <span className="wind-speed"> <i className="fa-solid fa-wind weather-img" style={{color: '#ffffff;'}}></i> <h3>Wind Speed</h3> </span> <p> {weather.windSpeed}</p> </div>
+                    <div className="humidity-percent"> <span className="humidity"> <i className="fa-solid fa-water weather-img" style={{color: '#ffffff;'}}></i> <h3>Humidity</h3> </span> <p>{weather.humidity}</p> </div>
                 </div>
                 <div className="third-col">
-                    <div className="sunrise-time"> <span className="sunrise"> <img src="../src/imgs/sun-solid.svg" alt="" /> <h3>Sunrise</h3> </span> <p>{formatSunriseSunset(weather.sunrise, weather.timezone)}</p> </div>
-                    <div className="sunset-time"> <span className="sunset"> <img src="../src/imgs/sun-solid.svg" alt="" /> <h3>Sunset</h3> </span> <p>{formatSunriseSunset(weather.sunset, weather.timezone)}</p> </div>
+                    <div className="sunrise-time"> <span className="sunrise"> <i className="fa-solid fa-sun weather-img" style={{color: '#ffffff;'}}></i> <h3>Sunrise</h3> </span> <p>{formatSunriseSunset(weather.sunrise, weather.timezone)}</p> </div>
+                    <div className="sunset-time"> <span className="sunset"> <i className="fa-solid fa-sun weather-img" style={{color: '#ffffff;'}}></i> <h3>Sunset</h3> </span> <p>{formatSunriseSunset(weather.sunset, weather.timezone)}</p> </div>
                 </div>
             </div>
         </div>

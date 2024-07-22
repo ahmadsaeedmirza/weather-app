@@ -13,7 +13,7 @@
 }
 
 input {
-    width: 75%;
+    width: 65%;
     padding: 0.8rem;
     padding-left: 2.5rem;
     border: transparent;
@@ -39,7 +39,7 @@ input:focus {
     height: auto;
     position: absolute;
     top: 2.75rem;
-    left: 6%;
+    left: 4%;
     z-index: 2;
 }
 
@@ -93,6 +93,6 @@ input:focus {
     }
 
     .search-img {
-        left: 8%;
+        left: 10%;
     }
 }

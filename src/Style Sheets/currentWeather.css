@@ -81,6 +81,12 @@ h2 {
     margin-right: 10px;
 }
 
+.weather-img {
+    width: 15px;
+    height: auto;
+    margin-right: 10px;
+}
+
 @media (max-width: 750px) { 
     h1 {
         font-size: 2rem;
