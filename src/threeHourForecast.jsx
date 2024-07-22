@@ -50,6 +50,9 @@ function ThreeHourForecast ({city, unit}) {
     const formatSunriseSunset = (secs, offset) =>
         DateTime.fromSeconds(secs).setZone(`UTC${offset >= 0 ? '+' : ''}${offset / 3600}`).toFormat('hh:mm a');
 
+    if (weather.forecasts.length === 0) {
+      return <div></div>; 
+    };
 
     return(
         <div className="three-hours">
@@ -73,33 +76,3 @@ function ThreeHourForecast ({city, unit}) {
 };
 
 export default ThreeHourForecast; 
-
-
-
-{/* <div className="city-info">
-            <h1>{weather.city} {weather.country}</h1>
-            {weather.sunrise && weather.sunset && (
-          <div>
-            <p>Sunrise: {formatSunriseSunset(weather.sunrise, weather.timezone)}</p>
-            <p>Sunset: {formatSunriseSunset(weather.sunset, weather.timezone)}</p>
-          </div>
-        )}
-            {weather.forecasts.length > 0 && (
-          <div>
-            {weather.forecasts.map((forecast, index) => (
-              <div key={index}>
-                <h2>{formatToLocalTime(forecast.dt, weather.timezone)}</h2>
-                <h2>{localTime}</h2>
-                <p>Temperature: {forecast.main.temp}°C</p>
-                <p>Feels Like: {forecast.main.feels_like}°C</p>
-                <p>Weather: {forecast.weather[0].main} <img src={`http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png`} alt="" /> </p>
-                <p>Wind Speed: {forecast.wind.speed} m/s</p>
-                <p>Min Temperature: {forecast.main.temp_min}°C</p>
-                <p>Max Temperature: {forecast.main.temp_max}°C</p>
-                <p>Humidity: {forecast.main.humidity}%</p>
-                <hr />
-              </div>
-            ))}
-          </div>
-        )}
-      </div>  */}

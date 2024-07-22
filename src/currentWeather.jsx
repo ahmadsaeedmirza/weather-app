@@ -77,7 +77,7 @@ function CurrentWeather ({ city , unit }) {
 
     if (!weather.city) {
         return <div></div>; 
-      }
+    }
 
     return (
         <div className="current-weather">
@@ -91,6 +91,7 @@ function CurrentWeather ({ city , unit }) {
                 
                 <img src={`http://openweathermap.org/img/wn/${weather.icon}@2x.png`} alt="" />
             </div>
+                <p className="local-time-mobile">{formatToLocalTime(weather.time, weather.timezone)}</p>
 
             <div className="current-weather-details">
                 <div className="first-col">

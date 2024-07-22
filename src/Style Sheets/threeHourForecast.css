@@ -36,3 +36,10 @@
 .line.hidden {
     display: none;
 }
+
+@media (max-width: 750px) { 
+    .three-hours {
+        margin-top: 2rem;
+        width: 90%;
+    }
+}
