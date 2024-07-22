@@ -1,0 +1,77 @@
+
+.current-weather {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    text-transform: capitalize;
+}
+
+.city-name {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.forecast {
+    font-size: 1.25rem;
+    margin-top: 0;
+}
+
+.city-name img {
+    width: 200px;
+    height: auto;
+}
+
+.temp {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.current-weather-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.feels-like, .temp-max, .temp-min, .sunrise, .sunset, .wind-speed, .humidity {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.first-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.feels-like-temp p, .temp-min-temp p, .temp-max-temp p, .wind-speed-ms p, .sunrise-time p, .sunset-time p, .humidity-percent p {
+    font-size: 1.5rem;
+    margin: 0;
+    margin-left: 2.5rem;
+}
+
+.feels-like img, .temp-min img, .temp-max img, .sunrise img , .sunset img, .wind-speed img , .humidity img {
+    width: 15px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.current-weather-details {
+    width: 100%;
+    border: transparent;
+    border-radius: 1.5rem;
+    padding: 0.5rem 1.5rem;
+    padding-bottom: 2rem;
+    background-color: #405D72;
+    margin-top: 4rem;
+} 
